@@ -11,7 +11,7 @@ public class GameDriver {
 	public static void main(String[] args) {
 		
 		
-		int round = 0;
+		int round = 1;
 		int fight = 1;
 		
 		
@@ -19,7 +19,8 @@ public class GameDriver {
 				new Fremen("Muad' Dib" , 15 ,20, 300),
 				new Sardukar("Shadam", 15,15,300),
 				new BeneGeserit("Miles Teg", 30, 100, 300),
-				new Mentat("Duncan Idaho" , 25, 50, 300)
+				new Mentat("Duncan Idaho" , 25, 50, 300),
+				new Tlelaxu("Whaf", 5,15,200)
 		};
 		   Random randNum = new Random();                                                 
 		
@@ -35,8 +36,9 @@ public class GameDriver {
 				 
 			System.out.println("   \nRound " + round +" " + myFighters[i] + "   vs   " + myFighters[l]);
 			
-			while(myFighters[i].health > 0 && myFighters[l].health > 0) {
+			while(myFighters[i].health > 0 && myFighters[l].health > 0 ) {
 				round++;
+				
 			myFighters[i].hit(myFighters[l].attact());
 			myFighters[l].hit(myFighters[i].attact());
 			
