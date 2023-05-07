@@ -6,6 +6,7 @@ package project3.characters;
 
 public abstract class GameCharacter {
 	
+	//Tlelaxu
 	protected String cName;
 	protected int strength;
 	protected int speed;
